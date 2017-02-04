@@ -1,7 +1,7 @@
-I use these scripts to capture my surveillance feeds 24/7 using ffmpeg.
+I use these scripts to capture my surveillance feeds 24/7 using ffmpeg, and split them in 5 minutes segments.
 
-On a Windows machine you only really need `cleanup.pl` and `record.pl`--you may have the operating system schedule a daily task to run both programs.
+On a Windows system you only really need `cleanup.pl` and `record.pl`--you may have the operating system schedule a daily task to run both programs.
 
-On a Unix-based system you need `cleanup.sh`, `cleanup.pl`, and `record.sh`.You just need to start the two Bash scripts at boot-time.
+On a Unix-based system you need `cleanup.sh`, `cleanup.pl`, and `record.sh`. You just need to start the two Bash scripts at boot-time.
 
 Don't forget to download ffmpeg and configure the approriate paths inside the scripts.

@@ -1,5 +1,3 @@
-# this script is used for recording on windows machines
-
 #!/usr/bin/perl
 
 use strict;

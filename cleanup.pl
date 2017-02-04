@@ -5,8 +5,8 @@ use warnings;
 use File::Find;
 
 # directory where media is stored
-#my $backup_root = "/Volumes/disk3/nvr/";
-my $backup_root = "C:\\Users\\Hunter\\NVR";
+my $backup_root = "/Volumes/disk3/nvr/";
+#my $backup_root = "C:\\Users\\Hunter\\NVR";
 
 my @file_list;
 my @find_dirs       = ($backup_root);               # directories to search
@@ -15,6 +15,7 @@ my $days            = 14;                           # how many days old
 my $seconds_per_day = 60 * 60 * 24;                 # seconds in a day
 my $AGE             = $days * $seconds_per_day;     # age in seconds
 
+# loops through sub directories and deletes old files
 find (sub {
   my $file = $File::Find::name;
   if (-f $file) {
